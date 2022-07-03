@@ -1,0 +1,22 @@
+{
+  "name": "jsonresponsechecker",
+  "version": "1.0.0",
+  "description": "Utility tool for comparing two different json response structures based on the mappings defined",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjusufbe/jsonResponseChecker.git"
+  },
+  "author": "Bakir Jusufbegovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjusufbe/jsonResponseChecker/issues"
+  },
+  "homepage": "https://github.com/bjusufbe/jsonResponseChecker#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

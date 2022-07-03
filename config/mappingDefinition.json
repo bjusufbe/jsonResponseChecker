@@ -1,0 +1,30 @@
+[
+    { 
+        "first": "myplace.displayNames[*].name",
+        "second": "names[*].name"
+    },
+    { 
+        "first": "myplace.displayPoint.coordinates.latitude",
+        "second": "coordinates.latitude"
+    },
+    { 
+        "first": "myplace.displayPoint.coordinates.longitude",
+        "second": "coordinates.longitude"
+    },
+    { 
+        "first": "myplace.categories[*]",
+        "second": "categories[*].type"
+    },
+    { 
+        "first": "myplace.specialHours[*].hoursByDay[*].day",
+        "second": "hours.specificHours[*].day"
+    },
+    { 
+        "first": "myplace.specialHours[*].hoursByDay[*].times.startTime",
+        "second": "hours.specificHours[*].startTime"
+    },
+    { 
+        "first": "myplace.specialHours[*].hoursByDay[*].times.endTime",
+        "second": "hours.specificHours[*].endTime"
+    }
+]

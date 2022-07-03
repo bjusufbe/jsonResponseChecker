@@ -1,0 +1,52 @@
+{
+    "myplace": {
+        "displayNames": [
+            {
+                "name": "Malibu Ice Cream 1"
+            },
+            {
+                "name": "Malibu Ice Cream 3"
+            },
+            {
+                "name": "Malibu Ice Cream 2"
+            }
+        ],
+        "displayPoint": {
+            "coordinates": {
+                "latitude": "37.334331",
+                "longitude": "-122.0080858"
+            }
+        },
+        "categories": [
+            "restaurant",
+            "guesthouse"
+        ],
+        "specialHours": [
+            {
+                "hoursByDay": [
+                    {
+                        "day": "SATURDAY",
+                        "times": {
+                            "startTime": "08:00",
+                            "endTime": "12:00"
+                        }
+                    },
+                    {
+                        "day": "MONDAY",
+                        "times": {
+                            "startTime": "07:00",
+                            "endTime": "11:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "times": {
+                            "startTime": "09:00",
+                            "endTime": "13:00"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
