@@ -4,11 +4,13 @@ let firstInput = require('./config/firstInput.json');
 let secondInput = require('./config/secondInput.json');
 let mappingDefinition = require('./config/mappingDefinition.json');
 
+// resolve all mappings
 for (let mapping of mappingDefinition) {
-    comparer.resolveInitialMappingKey(firstInput, secondInput, mapping );
+    comparer.resolveMappingKeys(firstInput, secondInput, mapping );
 }
 let resolvedMappingDefinitions = comparer.flattenListOfArrays(comparer.mappingResolvedOutput);
 
+// do sorting of the input files so they are consistent
 firstInput = comparer.sortInputBySpecificKeyOnSpecificPath(firstInput, 'myplace.categories');
 secondInput = comparer.sortInputBySpecificKeyOnSpecificPath(secondInput, 'categories', 'type');
 
@@ -18,6 +20,7 @@ secondInput = comparer.sortInputBySpecificKeyOnSpecificPath(secondInput, 'names'
 firstInput = comparer.sortInputBySpecificKeyOnSpecificPath(firstInput, 'myplace.specialHours[0].hoursByDay' , 'day');
 secondInput = comparer.sortInputBySpecificKeyOnSpecificPath(secondInput, 'hours.specificHours', 'day');
 
+// get values from both files based on mappings and do comparison
 let mappingSuccessResult = [];
 for (let mapping of resolvedMappingDefinitions) {
     let matched = false;
